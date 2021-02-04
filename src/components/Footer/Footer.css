@@ -1,0 +1,13 @@
+.footer {
+  padding: 10px;
+  background-color: #0055a4;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.footer > h4 {
+  text-align: center;
+  color: white;
+}

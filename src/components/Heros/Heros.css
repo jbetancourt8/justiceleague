@@ -1,0 +1,17 @@
+.heros {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.heros > h2,
+h3 {
+  text-align: center;
+}
+
+.heros_logo {
+  object-fit: scale-down;
+}

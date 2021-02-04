@@ -1,0 +1,86 @@
+  [
+    {
+      "id": 1,
+      "hero": "Batman",
+      "name": "Bruce Wayne",
+      "logo": "batman.png",
+      "alt": "batman",
+      "sidekick": ["Robin", "Batgirl"],
+      "powers": [], 
+      "origin": "Gotham City",
+      "status": null,
+      "colors": ["#fdff00", "#988829", "#242424", "#282e3c", "#505c7c"]
+    },
+    {
+      "id": 2,
+      "hero": "Superman",
+      "name": "Clark Kent",
+      "logo": "superman.png",
+      "alt": "superman",
+      "sidekick": ["Supergirl", "Superboy", "Superdog"],
+      "powers": ["Superhuman strength", "Super speed", "Heat vision", "Flight"],
+      "orgin": "Metropolis",
+      "status": null,
+      "colors": ["#bb070e", "#f11712", "#ffe63a", "#0099f7", "#34f9fe"]
+    },
+    {
+      "id": 3,
+      "hero": "Wonder Woman",
+      "name": "Princess Diana of Themyscira",
+      "logo": "wonderwoman.png",
+      "alt": "wonderwoman",
+      "sidekick": ["Wonder Girl"],
+      "powers": ["Superhuam strength", "Regeneration"],
+      "origin": "Themyscira",
+      "status": null,
+      "colors": ["#f6576d", "#838f9c", "#3f6cb8", "#ecc466", "#83c8ea"]
+    },
+    {
+      "id": 4,
+      "hero": "The Flash",
+      "name": "Bartholomew Henry 'Barry' Allen",
+      "logo": "flash.png",
+      "alt": "flash",
+      "sidekick": ["Kid Flash"],
+      "powers": ["Superhuam speed", "Time maniplulation"],
+      "origin": "Central City",
+      "status": "Coming Soon!",
+      "colors": ["#a51818", "#dddf3b", "#ffffff", "#f2b491", "#69411f"]
+    },
+    {
+      "id": 5,
+      "hero": "Green Lantern",
+      "name": "John Stewart",
+      "logo": "greenlantern.png",
+      "alt": "greenlantern",
+      "sidekick": [],
+      "powers": ["Power Ring"],
+      "orgin": "Detroit, Michigan",
+      "status": "Coming Soon!",
+      "colors": ["#000000", "#ffffff", "#015f40", "#53ab82", "#32363d"]
+    },
+    {
+      "id": 6,
+      "hero": "Aquaman",
+      "name": "Arthur Curry",
+      "logo": "aquaman.svg",
+      "alt": "aquaman",
+      "sidekick": ["Aqualad"],
+      "powers": ["Superhuam strength", "Underwater adaption", "Telepathic control of all aquatic life"],
+      "origin": "Atlantis",
+      "status": "Coming Soon!",
+      "colors": ["#E89527", "#27D6E8", "#DBECEE", "#0B191A", "#5DA6AE"]
+    },
+    {
+      "id": 7,
+      "hero": "Martian Manhunter",
+      "name": "J'onn J'onzz",
+      "logo": "martian.png",
+      "alt": "martian",
+      "sidekick": ["Zook"],
+      "powers": ["Superhuam strength", "Superhuman vision"],
+      "origin": "Mars",
+      "status": "Coming Soon!",
+      "colors": ["#04B353", "#C30404", "#FAC204", "#070604"]
+    }
+  ]

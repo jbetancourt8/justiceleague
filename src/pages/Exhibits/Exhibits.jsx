@@ -1,99 +1,89 @@
 import React from "react";
 import "./Exhibits.css";
-
-import Heros from "../../components/Heros";
+import { Link, useLocation } from "react-router-dom";
 import data from "../../data/data.json";
+import Header from "../../components/Header";
 
 function Exhibits() {
+  const location = useLocation();
   return (
-    <div className="exhibits_container">
-      {data.map(
-        ({
-          id,
-          hero,
-          name,
-          logo,
-          alt,
-          sidekick,
-          powers,
-          origin,
-          status,
-          colors,
-        }) => {
+    <div className="exhibits">
+      <Header />
+      <h1>Welcome to the Justice League Museum.</h1>
+      <div className="exhibits_history">
+        <div>
+          <img
+            src="../../assets/museum.jpg"
+            alt="museum"
+            height={250}
+            className="exhibits_museum"
+          />
+        </div>
+        <p>
+          Located in Washington, D.C., this state of the art facility was
+          originally designed by John Stewart and Wonder Woman, financed by
+          Batman, and built by Superman to be the headquarters of the JL.
+        </p>
+        <p>
+          However, with the construction of the Justice Leagure Satellite, the
+          facility was donated to the city of Washington. As a tribute to all
+          the League has done, the facility is being converted into a museum.
+        </p>
+        <p>
+          After months of renovation, we are happy to unveil our first three
+          exhibits.
+        </p>
+      </div>
+      <div className="exhibits_list">
+        {data.map((data) => {
           return (
-            <Heros
-              key={id}
-              hero={hero}
-              name={name}
-              logo={logo}
-              alt={alt}
-              sidekick={sidekick}
-              power={powers}
-              origin={origin}
-              status={status}
-              colors={colors}
-            />
+            <Link
+              className="exhibits_item"
+              key={data.id}
+              to={{
+                pathname: `/${data.alt}`,
+                state: { data: data },
+              }}
+              style={{
+                textDecoration: "none",
+                color: "black",
+              }}
+            >
+              <div
+                className="exhibits_hero"
+                style={{
+                  backgroundColor: data.colors[0],
+                  borderColor: data.colors[1],
+                  borderStyle: "solid",
+                  borderRadius: 10,
+                }}
+              >
+                <img
+                  src={`../../assets/${data.logo}`}
+                  alt={data.alt}
+                  width="100"
+                  className="exhibits_hero_logo"
+                />
+                <h2 className="exhibits_name">{data.hero}</h2>
+              </div>
+            </Link>
           );
-        }
-      )}
+        })}
+
+        <div
+          className="exhibits_hero"
+          style={{
+            backgroundColor: "lightgray",
+            borderColor: "black",
+            borderStyle: "solid",
+            borderRadius: 10,
+          }}
+        >
+          <h2>More coming soon!</h2>
+        </div>
+      </div>
     </div>
   );
 }
 
 export default Exhibits;
-
-/*
-<Heros
-        bgColor="lightgray"
-        bc="black"
-        src="../../assets/batman.png"
-        alt="batman"
-        hero="Batman"
-      />
-
-      <Heros
-        bgColor="lightblue"
-        bc="blue"
-        src="../../assets/superman.png"
-        alt="superman"
-        hero="Superman"
-      />
-      <Heros
-        bgColor="#f6576d"
-        bc="#3f6cb8"
-        src="../../assets/wonderwoman.png"
-        alt="wonderwoman"
-        hero="Wonder Woman"
-      />
-      <Heros
-        bgColor="#dddf3b"
-        bc="#AB0020"
-        src="../../assets/flash.png"
-        alt="flash"
-        hero="The Flash"
-        status="Coming Soon!"
-      />
-      <Heros
-        bgColor="lightgreen"
-        bc="green"
-        src="../../assets/greenlantern.png"
-        alt="greenlanter"
-        hero="Green Lantern"
-        status="Coming Soon!"
-      />
-      <Heros
-        bgColor="gold"
-        bc="green"
-        src="../../assets/aquaman.svg"
-        alt="aquaman"
-        hero="Aquaman"
-        status="Coming Soon!"
-      />
-      <Heros
-        bgColor="darkseagreen"
-        bc="darkred"
-        src="../../assets/martian.png"
-        alt="martian"
-        hero="Martian Manhunter"
-        status="Coming Soon!"
-      />*/

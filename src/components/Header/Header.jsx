@@ -1,57 +1,68 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import { ReactComponent as CloseMenu } from "../../assets/x.svg";
+import { ReactComponent as MenuIcon } from "../../assets/menu.svg";
+import { Link } from "react-router-dom";
 import "./Header.css";
-import { CSSTransition } from "react-transition-group";
 
-import { Link, useHistory } from "react-router-dom";
-
-export default function Header() {
-  const [isNavVisible, setNavVisibility] = useState(false);
-  const [isSmallScreen, setIsSmallScreen] = useState(false);
-
-  useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width: 700px)");
-    mediaQuery.addListener(handleMediaQueryChange);
-    handleMediaQueryChange(mediaQuery);
-
-    return () => {
-      mediaQuery.removeListener(handleMediaQueryChange);
-    };
-  }, []);
-
-  const handleMediaQueryChange = (mediaQuery) => {
-    if (mediaQuery.matches) {
-      setIsSmallScreen(true);
-    } else {
-      setIsSmallScreen(false);
-    }
-  };
-
-  const toggleNav = () => {
-    setNavVisibility(!isNavVisible);
-  };
+function Header() {
+  const [click, setClick] = useState(false);
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
 
   return (
-    <header className="Header">
-      <img
-        src="../../assets/hamburger-menu.png"
-        width="80"
-        className="Logo"
-        alt="logo"
-      />
-      <CSSTransition
-        in={!isSmallScreen || isNavVisible}
-        timeout={350}
-        classNames="NavAnimation"
-        unmountOnExit
-      >
-        <nav className="Nav">
-          <Link href="/">Home</Link>
-          <Link href="/contact">Contact</Link>
-        </nav>
-      </CSSTransition>
-      <button onClick={toggleNav} className="Burger">
-        🍔
-      </button>
-    </header>
+    <div className="header">
+      <div className="header_logo_nav">
+        <div className="header_logo_container">
+          <Link
+            to="/"
+            style={{
+              textDecoration: "none",
+              color: "black",
+            }}
+          >
+            <h1>JL Museum</h1>
+          </Link>
+        </div>
+        <ul
+          className={
+            click ? "header_nav_options header_active" : "header_nav_options"
+          }
+        >
+          <li className="header_option" onClick={() => closeMobileMenu()}>
+            <Link
+              to="/exhibits"
+              style={{
+                textDecoration: "none",
+                color: "black",
+                fontSize: 25,
+              }}
+            >
+              Exhibits
+            </Link>
+          </li>
+          <li className="header_option" onClick={() => closeMobileMenu()}>
+            <Link
+              to="/contact"
+              style={{
+                textDecoration: "none",
+                color: "black",
+                fontSize: 25,
+              }}
+            >
+              Contact
+            </Link>
+          </li>
+        </ul>
+      </div>
+      <div className="header_mobile_menu" onClick={handleClick}>
+        {click ? (
+          <CloseMenu className="header_menu_icon" />
+        ) : (
+          <MenuIcon className="header_menu_icon" />
+        )}
+      </div>
+    </div>
   );
 }
+
+export default Header;

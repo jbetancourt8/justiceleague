@@ -1,0 +1,23 @@
+html,
+body,
+.detail {
+  height: 100%;
+}
+
+.detail_container {
+  height: 100%;
+  border: 2px red solid;
+  padding: 10px;
+  margin: 20px;
+}
+.detail_sagan {
+  border: 2px blue solid;
+  margin-top: 10px;
+  padding: 10px;
+  margin: 20px;
+  align-self: center;
+}
+
+.detail_sagan > h2 {
+  text-align: center;
+}

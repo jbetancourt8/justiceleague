@@ -2,18 +2,24 @@ import React from "react";
 import "./Home.css";
 
 import { Link } from "react-router-dom";
+import Header from "../../components/Header";
 
 function Home() {
   return (
     <div className="home_container">
-      <video
-        className="home_video"
-        autoPlay="autoPlay"
-        muted="muted"
-        loop="loop"
-      >
-        <source src="./assets/Earth_Loop.mp4" type="video/mp4" />
-      </video>
+      <div className="home_header">
+        <Header />
+      </div>
+      <div>
+        <video
+          className="home_video"
+          autoPlay="autoPlay"
+          muted="muted"
+          loop="loop"
+        >
+          <source src="./assets/Earth_Loop.mp4" type="video/mp4" />
+        </video>
+      </div>
 
       <div className="home_content">
         <img
@@ -28,7 +34,9 @@ function Home() {
         <h3 className="home_text">Opening Soon!</h3>
 
         <Link to="./exhibits">
-          <button className="home_button">Check out exhibits</button>
+          <button className="home_button">
+            <h4>Check out our exhibits</h4>
+          </button>
         </Link>
       </div>
     </div>

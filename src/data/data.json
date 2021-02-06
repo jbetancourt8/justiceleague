@@ -11,7 +11,8 @@
       "status": "Coming Soon!",
       "colors": ["gray", "gold", "#1C1C14", "#958B11", "#505c7c"],
       "bio": "Batman is the superhero protector of Gotham City, a tortured, brooding vigilante dressed as a sort of human bat who fights against evil and strikes fear into the hearts of criminals everywhere. In his public identity he is Bruce Wayne, billionaire industrialist and notorious playboy. Although he has no superhuman abilities, he is one of the world's smartest men and greatest fighters. His physical prowess, technical ingenuity, and tactical thinking make him an incredibly dangerous opponent. He is also a founding member of the Justice League.",
-      "profile": "batmanprofile.jpg"
+      "profile": "batmanprofile.jpg",
+      "sagan": "https://app.saganworks.com/public/f52191c4-c669-46d7-d2ff-08d8cad36071"
 
     },
     {
@@ -26,7 +27,8 @@
       "status": "Coming Soon!",
       "colors": ["cornflowerblue", "red", "#ffe63a", "#0099f7", "#34f9fe"],
       "bio": "Superman, also known as the Man of Steel, is one of the most powerful superheroes in the universe. His abilities include incredible super-strength, super-speed, invulnerability, freezing breath, flight, and heat-vision. Born as Kal-El on the dying planet Krypton, his parents Jor-El and Lara sent him in a rocket to the planet Earth where he would be the last surviving member of his race. His rocket was discovered by the kindly Jonathan and Martha Kent, who raised him as their son Clark Kent in the town of Smallville, Kansas. His upbringing provided him with strong moral values, and life-long friends Lana Lang and Pete Ross. In his secret identity he works as a reporter at the Daily Planet in the city of Metropolis. This is where he interacts with his love interest Lois Lane, and his co-workers Perry White and Jimmy Olsen. His greatest nemesis is the brilliant super-villain Lex Luthor. To preserve the memory of his home planet and provide him rest from his double-life and adventures, he maintains a Fortress of Solitude at the North Pole. Superman remains proud of his dual heritage, taking seriously the lessons of his birth-parents and his adopted parents. Although he is an alien to this world, he heavily values his humanity, and fights with conviction for truth, justice, and the American way. There are several other heroes inspired by or directly related to his legacy, including Superboy and Supergirl. He is also a member of the Justice League of America and the Legion of Super-Heroes.",
-      "profile": "supermanprofile.jpg"
+      "profile": "supermanprofile.jpg",
+      "sagan": "https://app.saganworks.com/public/b3c6fe29-4921-477d-d300-08d8cad36071"
     },
     {
       "id": 3,
@@ -40,7 +42,8 @@
       "status": "Coming Soon!",
       "colors": ["crimson", "blue", "#3f6cb8", "#ecc466", "#83c8ea"],
       "bio": "Wonder Woman is an Amazon warrior princess and one of the most powerful superheroes in the universe. The daughter of Hippolyta, she was given power by the Gods to fight against evil in all its forms. Although she was raised entirely by women on the island of Themyscira, she was sent as an ambassador to the Man's World, spreading their idealistic message of strength and love. Wonder Woman fights crime and acts as a positive role model for women everywhere. Her equipment includes the Lasso of Truth, magic gauntlets, and an invisible jet. In the secret identity she has adopted to become closer to humanity, she is Diana Prince, a government agent for the Department of Metahuman Affairs. Wonder Woman is also a founding member of the Justice League of America. She has also been a member of the Star Sapphire Corps, the Sinestro Corps, and the Justice League Dark.",
-      "profile": "wonderwomanprofile.jpg"
+      "profile": "wonderwomanprofile.jpg",
+      "sagan": "https://app.saganworks.com/public/6d635888-a830-4208-d2fe-08d8cad36071"
     },
     {
       "id": 4,
@@ -54,7 +57,8 @@
       "status": null,
       "colors": ["indianred", "yellow", "#ffffff", "#f2b491", "#69411f"],
       "bio": "The Flash is the fastest man alive. He is the protector of Central City and Keystone City, fighting against evil using his super-speed and a dedicated sense of heroism. His legacy, the Flash Family, spans throughout history tapping into the enigmatic Speed Force to gain their powers. Jay Garrick was the original Flash of the Golden Age, and a founding member of the Justice Society of America.",
-      "profile": "flashprofile.jpg"
+      "profile": "flashprofile.jpg",
+      "sagan": null
     },
     {
       "id": 5,
@@ -68,7 +72,8 @@
       "status": null,
       "colors": ["forestgreen", "darkgreen", "#015f40", "#53ab82", "#32363d"],
       "bio": "Hal Jordan is the greatest Green Lantern, an inter-galactic police officer and member of the Green Lantern Corps, chosen by the Guardians of the Universe for his ability to overcome great fear. The strength of his willpower allows him to wield the universe's mightiest weapon, a power ring controlled by his thoughts. In his secret identity he is a test pilot working for Ferris Aircraft where his boss Carol Ferris is also his romantic interest. Having turned into the evil Parallax during Emerald Twilight and died during The Final Night, his soul became a host of the Spectre during Day of Judgment until his resurrection during Green Lantern: Rebirth. Although he is the most well-known Lantern, Alan Scott of the Golden Age is the original version of the character. Other Lanterns that have acted as his partners, successors or replacements at times have included Guy Gardner, John Stewart and Kyle Rayner. He is a founding member of the Justice League of America.",
-      "profile": "greenlanternprofile.jpg"
+      "profile": "greenlanternprofile.jpg",
+      "sagan": null
     },
     {
       "id": 6,
@@ -82,7 +87,8 @@
       "status": null,
       "colors": ["orange", "darkblue", "#DBECEE", "#0B191A", "#5DA6AE"],
       "bio": "Aquaman, also known as Arthur Curry and Orin, is a superhero and the ruler of the seas. As the king of Atlantis and other undersea territories, he technically controls most of the planet. His abilities include super-strength, durability, super-speed, staying underwater indefinitely, and telepathy, which he uses to communicate with sea-life. His aquatic nature means he requires water regularly at the risk of dehydration, although he is perfectly capable of staying on land for extended periods. The Aquaman Family also includes his wife Mera and his side-kicks Aqualad and Aquagirl, along with a number of others, fighting together against villains. He is also a founding member of the Justice League of America.",
-      "profile": "aquamanprofile.jpg"
+      "profile": "aquamanprofile.jpg",
+      "sagan": null
     },
     {
       "id": 7,
@@ -96,6 +102,7 @@
       "status": null,
       "colors": ["darkgreen", "darkred", "#FAC204", "#070604"],
       "bio": "Martian Manhunter, also known as J'onn J'onzz and John Jones, is a superhero from the planet Mars and the last surviving member of his race. A martian holocaust killed his wife and daughter, nearly driving him mad, until he was brought to Earth in an accident caused by scientist Saul Erdel. His natural abilities include super-strength, super-speed, invulnerability, flight, shape-shifting, intangibility and telepathy. He has been a member of almost every incarnation of the Justice League of America.",
-      "profile": "martianprofile.jpg"
+      "profile": "martianprofile.jpg",
+      "sagan": null
     }
   ]

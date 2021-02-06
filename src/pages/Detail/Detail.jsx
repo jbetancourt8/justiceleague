@@ -8,6 +8,15 @@ function Detail() {
 
   if (location.state !== undefined) {
     const { data } = location.state;
+    const isSagan = data.sagan ? (
+      <iframe
+        style={{
+          width: "80%",
+          height: 500,
+        }}
+        src="https://app.saganworks.com/public/6d635888-a830-4208-d2fe-08d8cad36071"
+      ></iframe>
+    ) : null;
 
     const status = data.status ? (
       <div className="detail_sagan">
@@ -19,13 +28,7 @@ function Detail() {
           </a>
           .
         </h2>
-        <iframe
-          style={{
-            width: "80%",
-            height: 500,
-          }}
-          src="https://app.saganworks.com/public/4e56b661-1e0b-481d-e236-08d8c393297e"
-        ></iframe>
+        {isSagan}
       </div>
     ) : (
       <div>

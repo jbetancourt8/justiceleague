@@ -15,7 +15,6 @@ function Exhibits() {
           <img
             src="../../assets/museum.jpg"
             alt="museum"
-            height={250}
             className="exhibits_museum"
           />
         </div>
@@ -31,7 +30,8 @@ function Exhibits() {
         </p>
         <p>
           After months of renovation, we are happy to unveil our first three
-          exhibits.
+          exhibits for Batman, Superman, and Wonder Woman. Click on the each
+          hero to learn more about them.
         </p>
       </div>
       <div className="exhibits_list">
@@ -62,6 +62,7 @@ function Exhibits() {
                   src={`../../assets/${data.logo}`}
                   alt={data.alt}
                   width="100"
+                  height="100"
                   className="exhibits_hero_logo"
                 />
                 <h2 className="exhibits_name">{data.hero}</h2>
@@ -69,18 +70,6 @@ function Exhibits() {
             </Link>
           );
         })}
-
-        <div
-          className="exhibits_hero"
-          style={{
-            backgroundColor: "lightgray",
-            borderColor: "black",
-            borderStyle: "solid",
-            borderRadius: 10,
-          }}
-        >
-          <h2>More coming soon!</h2>
-        </div>
       </div>
     </div>
   );

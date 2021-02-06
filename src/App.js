@@ -19,9 +19,6 @@ function App() {
             <Route path="/exhibits">
               <Exhibits />
             </Route>
-            <Route path="/contact">
-              <Contact />
-            </Route>
             <Route path="/:id">
               <Detail />
             </Route>

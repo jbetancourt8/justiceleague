@@ -40,18 +40,6 @@ function Header() {
               Exhibits
             </Link>
           </li>
-          <li className="header_option" onClick={() => closeMobileMenu()}>
-            <Link
-              to="/contact"
-              style={{
-                textDecoration: "none",
-                color: "black",
-                fontSize: 25,
-              }}
-            >
-              Contact
-            </Link>
-          </li>
         </ul>
       </div>
       <div className="header_mobile_menu" onClick={handleClick}>

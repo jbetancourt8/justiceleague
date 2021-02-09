@@ -10,6 +10,7 @@ function Home() {
       <div className="home_header">
         <Header />
       </div>
+
       <div>
         <video
           className="home_video"
@@ -27,11 +28,11 @@ function Home() {
           alt="JL logo"
           height="200"
         />
-        <h1 className="home_text">Welcome to the Justice League Museum</h1>
-        <h2 className="home_text">
+        <p className="home_title">Welcome to the Justice League Museum</p>
+        <p className="home_text">
           Honoring the heros that keep our planet safe.
-        </h2>
-        <h3 className="home_text">Opening Soon!</h3>
+        </p>
+        <p className="home_text">Opening Soon!</p>
 
         <Link to="./exhibits">
           <button className="home_button">

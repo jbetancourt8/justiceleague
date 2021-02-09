@@ -17,7 +17,7 @@ function Header() {
             to="/"
             style={{
               textDecoration: "none",
-              color: "black",
+              color: "white",
             }}
           >
             <h1>JL Museum</h1>
@@ -33,7 +33,7 @@ function Header() {
               to="/exhibits"
               style={{
                 textDecoration: "none",
-                color: "black",
+                color: "white",
                 fontSize: 25,
               }}
             >

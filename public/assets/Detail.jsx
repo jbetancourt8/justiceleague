@@ -31,27 +31,20 @@ function Detail() {
         {isSagan}
       </div>
     ) : (
-      <div className="detail_soon">
-        <h2 className="detail_soon_text">A 3D experience is coming soon!</h2>
+      <div>
+        <h2>A 3D experience is coming soon!</h2>
       </div>
     );
 
     return (
-      <div
-        className="detail_container"
-        style={{
-          backgroundImage: `url(${data.bg})`,
-        }}
-      >
+      <div className="detail" style={{ backgroundImage: `url(${data.bg})` }}>
         <Header />
-
-        <div className="detail_content">
+        <div className="detail_container">
           <h1>{data.hero}</h1>
           <img
             src={`../../assets/${data.profile}`}
             alt={data.alt}
             width="200"
-            className="detail_image"
           />
           <p>{data.bio}</p>
         </div>

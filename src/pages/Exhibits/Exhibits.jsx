@@ -7,10 +7,11 @@ import Header from "../../components/Header";
 function Exhibits() {
   const location = useLocation();
   return (
-    <div className="exhibits">
+    <div className="exhibits_container">
       <Header />
-      <h1>Welcome to the Justice League Museum.</h1>
+
       <div className="exhibits_history">
+        <h1>Welcome to the Justice League Museum!</h1>
         <div>
           <img
             src="../../assets/museum.jpg"
@@ -21,7 +22,8 @@ function Exhibits() {
         <p>
           Located in Washington, D.C., this state of the art facility was
           originally designed by John Stewart and Wonder Woman, financed by
-          Batman, and built by Superman to be the headquarters of the JL.
+          Batman, and built by Superman to be the headquarters of the Justice
+          League.
         </p>
         <p>
           However, with the construction of the Justice Leagure Satellite, the
@@ -34,40 +36,40 @@ function Exhibits() {
           hero to learn more about them.
         </p>
       </div>
-      <div className="exhibits_list">
+
+      <div className="exhibits_bottom_content">
         {data.map((data) => {
           return (
-            <Link
-              className="exhibits_item"
-              key={data.id}
-              to={{
-                pathname: `/${data.alt}`,
-                state: { data: data },
-              }}
-              style={{
-                textDecoration: "none",
-                color: "black",
-              }}
-            >
-              <div
-                className="exhibits_hero"
+            <div className="exhibits_item">
+              <Link
+                to={{
+                  pathname: `/${data.alt}`,
+                  state: { data: data },
+                }}
                 style={{
-                  backgroundColor: data.colors[0],
-                  borderColor: data.colors[1],
-                  borderStyle: "solid",
-                  borderRadius: 10,
+                  textDecoration: "none",
+                  color: "black",
                 }}
               >
-                <img
-                  src={`../../assets/${data.logo}`}
-                  alt={data.alt}
-                  width="100"
-                  height="100"
-                  className="exhibits_hero_logo"
-                />
-                <h2 className="exhibits_name">{data.hero}</h2>
-              </div>
-            </Link>
+                <div
+                  className="exhibits_hero"
+                  style={{
+                    backgroundColor: data.colors[0],
+                    borderColor: data.colors[1],
+                    borderStyle: "solid",
+                    borderRadius: 10,
+                    borderWidth: 5,
+                  }}
+                >
+                  <img
+                    src={`../../assets/${data.logo}`}
+                    alt={data.alt}
+                    className="exhibits_hero_logo"
+                  />
+                  <h2 className="exhibits_name">{data.hero}</h2>
+                </div>
+              </Link>
+            </div>
           );
         })}
       </div>

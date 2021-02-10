@@ -10,10 +10,7 @@ function Detail() {
     const { data } = location.state;
     const isSagan = data.sagan ? (
       <iframe
-        style={{
-          width: "80%",
-          height: 500,
-        }}
+        className="detail_iframe"
         src="https://app.saganworks.com/public/6d635888-a830-4208-d2fe-08d8cad36071"
       ></iframe>
     ) : null;

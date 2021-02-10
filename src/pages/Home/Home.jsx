@@ -17,6 +17,7 @@ function Home() {
           autoPlay="autoPlay"
           muted="muted"
           loop="loop"
+          playsInline
         >
           <source src="./assets/Earth_Loop.mp4" type="video/mp4" />
         </video>

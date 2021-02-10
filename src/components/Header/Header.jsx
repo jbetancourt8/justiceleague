@@ -1,14 +1,8 @@
-import React, { useState } from "react";
-import { ReactComponent as CloseMenu } from "../../assets/x.svg";
-import { ReactComponent as MenuIcon } from "../../assets/menu.svg";
+import React from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
 
 function Header() {
-  const [click, setClick] = useState(false);
-  const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
-
   return (
     <div className="header">
       <div className="header_logo_nav">
@@ -20,34 +14,28 @@ function Header() {
               color: "white",
             }}
           >
-            <h1>JL Museum</h1>
+            <img
+              className="header_logo"
+              src="../../assets/jllogo.png"
+              alt="jl logo"
+            />
           </Link>
         </div>
-        <ul
-          className={
-            click ? "header_nav_options header_active" : "header_nav_options"
-          }
-        >
-          <li className="header_option" onClick={() => closeMobileMenu()}>
+        <ul style={{ listStyleType: "none" }}>
+          <li className="header_option">
             <Link
               to="/exhibits"
               style={{
                 textDecoration: "none",
                 color: "white",
                 fontSize: 25,
+                textShadow: "2px 2px red",
               }}
             >
               Exhibits
             </Link>
           </li>
         </ul>
-      </div>
-      <div className="header_mobile_menu" onClick={handleClick}>
-        {click ? (
-          <CloseMenu className="header_menu_icon" />
-        ) : (
-          <MenuIcon className="header_menu_icon" />
-        )}
       </div>
     </div>
   );

@@ -27,7 +27,7 @@ function Home() {
         <img
           src="./assets/Justice-League-logo.png"
           alt="JL logo"
-          height="200"
+          className="home_logo"
         />
         <p className="home_title">Welcome to the Justice League Museum</p>
         <p className="home_text">

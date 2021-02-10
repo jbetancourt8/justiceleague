@@ -9,11 +9,7 @@ function Detail() {
   if (location.state !== undefined) {
     const { data } = location.state;
     const isSagan = data.sagan ? (
-      <iframe
-        className="detail_iframe"
-        src="https://app.saganworks.com/public/6d635888-a830-4208-d2fe-08d8cad36071"
-        title="Sagan"
-      ></iframe>
+      <iframe className="detail_iframe" src={data.sagan} title="Sagan"></iframe>
     ) : null;
 
     const status = data.status ? (

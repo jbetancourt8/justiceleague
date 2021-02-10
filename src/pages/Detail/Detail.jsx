@@ -12,6 +12,7 @@ function Detail() {
       <iframe
         className="detail_iframe"
         src="https://app.saganworks.com/public/6d635888-a830-4208-d2fe-08d8cad36071"
+        title="Sagan"
       ></iframe>
     ) : null;
 
@@ -20,7 +21,7 @@ function Detail() {
         <h2>
           Want to check out the exhibit? Try our 3D immersive experience,
           powered by{" "}
-          <a href="https://saganworks.com/" target="_blank">
+          <a href="https://saganworks.com/" target="_blank" rel="noreferrer">
             Saganworks
           </a>
           .

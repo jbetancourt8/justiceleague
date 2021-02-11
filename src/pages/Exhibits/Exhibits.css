@@ -60,7 +60,6 @@ p {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
   height: 100%;
 }
 
@@ -68,12 +67,14 @@ p {
   object-fit: contain;
   height: 100px;
   width: 100px;
+  margin-left: 10px;
+  margin-right: 15px;
 }
 
 .exhibits_name {
   font-weight: 600;
-  font-size: x-large;
-  text-align: center;
+  font-size: large;
+  text-align: start;
 }
 
 @media (max-width: 400px) {

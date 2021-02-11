@@ -40,7 +40,7 @@ function Exhibits() {
       <div className="exhibits_bottom_content">
         {data.map((data) => {
           return (
-            <div className="exhibits_item">
+            <div className="exhibits_item" key={data.id}>
               <Link
                 to={{
                   pathname: `/${data.alt}`,

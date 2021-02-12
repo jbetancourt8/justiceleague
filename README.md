@@ -11,3 +11,9 @@ Or clone the repo and run `npm install` then `npm start`.
 ## To do
 
 Create Sagans for the remaining 4 superheros.
+
+## Screenshots
+
+![home screen](./src/screenshots/screenshot1.png)
+![exhibits screen](./src/screenshots/screenshot2.png)
+![hero screen](./src/screenshots/screenshot3.png)

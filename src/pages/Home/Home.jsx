@@ -13,13 +13,7 @@ function Home() {
       </div>
 
       <div>
-        <video
-          className="home_video"
-          autoPlay="autoPlay"
-          muted="muted"
-          loop="loop"
-          playsInline
-        >
+        <video className="home_video" autoPlay muted loop playsInline>
           <source src={backgroundVideo} type="video/mp4" />
         </video>
       </div>

@@ -12,16 +12,7 @@ function Home() {
         <Header />
       </div>
 
-      <div>
-        <video
-          className="home_video"
-          autoPlay={true}
-          muted={true}
-          loop
-          playsInline
-          src={backgroundVideo}
-        />
-      </div>
+      <video className="home_video" autoPlay muted loop src={backgroundVideo} />
 
       <div className="home_content">
         <img src={jlLargeLogo} alt="JL logo" className="home_logo" />

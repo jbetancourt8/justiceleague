@@ -12,6 +12,8 @@ function Home() {
         <Header />
       </div>
 
+      <video className="home_video" autoPlay muted src={backgroundVideo} />
+
       <div className="home_content">
         <img src={jlLargeLogo} alt="JL logo" className="home_logo" />
         <p className="home_title">Welcome to the Justice League Museum</p>

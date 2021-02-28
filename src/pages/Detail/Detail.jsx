@@ -42,7 +42,7 @@ function Detail() {
         <div className="detail_content">
           <h1>{data.hero}</h1>
           <img
-            src={`../../assets/${data.profile}`}
+            src={data.profile}
             alt={data.alt}
             width="200"
             className="detail_image"

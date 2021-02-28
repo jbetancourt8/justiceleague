@@ -59,7 +59,7 @@ function Exhibits() {
                   }}
                 >
                   <img
-                    src="https://raw.githubusercontent.com/jbetancourt8/justiceleague/master/public/assets/batman.png"
+                    src={data.logo}
                     alt={data.alt}
                     className="exhibits_hero_logo"
                   />

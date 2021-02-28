@@ -8,7 +8,7 @@ This is a work of fiction.
 
 ## How to use
 
-[Deployed Website](https://justiceleague-app.herokuapp.com/)
+Deployed website coming soon!
 
 Or clone the repo and run `npm install` then `npm start`.
 

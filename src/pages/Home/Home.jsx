@@ -1,8 +1,9 @@
 import React from "react";
 import "./Home.css";
-
 import { Link } from "react-router-dom";
 import Header from "../../components/Header";
+import backgroundVideo from "../../assets/Earth_Loop.mp4";
+import jlLargeLogo from "../../assets/Justice-League-logo.png";
 
 function Home() {
   return (
@@ -19,16 +20,12 @@ function Home() {
           loop="loop"
           playsInline
         >
-          <source src="./assets/Earth_Loop.mp4" type="video/mp4" />
+          <source src={backgroundVideo} type="video/mp4" />
         </video>
       </div>
 
       <div className="home_content">
-        <img
-          src="./assets/Justice-League-logo.png"
-          alt="JL logo"
-          className="home_logo"
-        />
+        <img src={jlLargeLogo} alt="JL logo" className="home_logo" />
         <p className="home_title">Welcome to the Justice League Museum</p>
         <p className="home_text">
           Honoring the heros that keep our planet safe.

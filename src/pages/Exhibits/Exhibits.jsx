@@ -3,6 +3,7 @@ import "./Exhibits.css";
 import { Link, useLocation } from "react-router-dom";
 import data from "../../data/data.json";
 import Header from "../../components/Header";
+import museumImage from "../../assets/museum.jpg";
 
 function Exhibits() {
   const location = useLocation();
@@ -13,11 +14,7 @@ function Exhibits() {
       <div className="exhibits_history">
         <h1>Welcome to the Justice League Museum!</h1>
         <div>
-          <img
-            src="../../assets/museum.jpg"
-            alt="museum"
-            className="exhibits_museum"
-          />
+          <img src={museumImage} alt="museum" className="exhibits_museum" />
         </div>
         <p>
           Located in Washington, D.C., this state of the art facility was
@@ -62,7 +59,7 @@ function Exhibits() {
                   }}
                 >
                   <img
-                    src={`../../assets/${data.logo}`}
+                    src="https://raw.githubusercontent.com/jbetancourt8/justiceleague/master/public/assets/batman.png"
                     alt={data.alt}
                     className="exhibits_hero_logo"
                   />

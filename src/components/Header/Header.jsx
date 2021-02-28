@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
+import jlLogo from "../../assets/jllogo.png";
 
 function Header() {
   return (
@@ -14,11 +15,7 @@ function Header() {
               color: "white",
             }}
           >
-            <img
-              className="header_logo"
-              src="../../assets/jllogo.png"
-              alt="jl logo"
-            />
+            <img className="header_logo" src={jlLogo} alt="jl logo" />
           </Link>
         </div>
         <ul style={{ listStyleType: "none" }}>

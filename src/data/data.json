@@ -3,7 +3,7 @@
       "id": 1,
       "hero": "Batman",
       "name": "Bruce Wayne",
-      "logo": "batman.png",
+      "logo": "../../assets/batman.png",
       "alt": "batman",
       "sidekick": ["Robin", "Batgirl"],
       "powers": [], 

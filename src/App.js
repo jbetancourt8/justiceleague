@@ -9,7 +9,7 @@ import Detail from "./pages/Detail";
 function App() {
   return (
     <div className="app">
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <ScrollTop>
           <Switch>
             <Route exact path="/">

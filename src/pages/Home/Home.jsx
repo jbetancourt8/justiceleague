@@ -19,7 +19,9 @@ function Home() {
           muted={true}
           loop
           playsInline
-        ></video>
+        >
+          <source src={backgroundVideo} type="video/mp4" />
+        </video>
       </div>
 
       <div className="home_content">

@@ -2,7 +2,7 @@ import React from "react";
 import "./Home.css";
 import { Link } from "react-router-dom";
 import Header from "../../components/Header";
-import backgroundVideo from "../../assets/arth_Loop.mp4";
+import backgroundVideo from "../../assets/Earth_Loop.mp4";
 import jlLargeLogo from "../../assets/Justice-League-logo.png";
 
 function Home() {

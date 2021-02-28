@@ -2,6 +2,10 @@
 
 This application is a fictional interpretion of what a Justice Leauge Museum might look like. It was created using React.
 
+## Disclaimer
+
+This is a work of fiction.
+
 ## How to use
 
 [Deployed Website](https://justiceleague-app.herokuapp.com/)

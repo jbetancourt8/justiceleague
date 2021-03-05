@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/justiceleague/static/css/main.41a61508.chunk.css",
+    "main.css": "/justiceleague/static/css/main.39f388dd.chunk.css",
     "main.js": "/justiceleague/static/js/main.396b6071.chunk.js",
     "main.js.map": "/justiceleague/static/js/main.396b6071.chunk.js.map",
     "runtime-main.js": "/justiceleague/static/js/runtime-main.16436ae5.js",
@@ -8,7 +8,7 @@
     "static/js/2.4ea3b3e5.chunk.js": "/justiceleague/static/js/2.4ea3b3e5.chunk.js",
     "static/js/2.4ea3b3e5.chunk.js.map": "/justiceleague/static/js/2.4ea3b3e5.chunk.js.map",
     "index.html": "/justiceleague/index.html",
-    "static/css/main.41a61508.chunk.css.map": "/justiceleague/static/css/main.41a61508.chunk.css.map",
+    "static/css/main.39f388dd.chunk.css.map": "/justiceleague/static/css/main.39f388dd.chunk.css.map",
     "static/js/2.4ea3b3e5.chunk.js.LICENSE.txt": "/justiceleague/static/js/2.4ea3b3e5.chunk.js.LICENSE.txt",
     "static/media/Earth_Loop.aaf7a463.mp4": "/justiceleague/static/media/Earth_Loop.aaf7a463.mp4",
     "static/media/Justice-League-logo.3a54672c.png": "/justiceleague/static/media/Justice-League-logo.3a54672c.png",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.16436ae5.js",
     "static/js/2.4ea3b3e5.chunk.js",
-    "static/css/main.41a61508.chunk.css",
+    "static/css/main.39f388dd.chunk.css",
     "static/js/main.396b6071.chunk.js"
   ]
 }

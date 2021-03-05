@@ -1,5 +1,10 @@
 import "./App.css";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Redirect,
+} from "react-router-dom";
 
 import ScrollTop from "./components/ScrollTop";
 import Home from "./pages/Home";
@@ -21,6 +26,7 @@ function App() {
             <Route path="/:id">
               <Detail />
             </Route>
+            <Route render={() => <Redirect to={{ pathname: "/" }} />} />
           </Switch>
         </ScrollTop>
       </Router>

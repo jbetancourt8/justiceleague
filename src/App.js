@@ -1,4 +1,3 @@
-import "./App.css";
 import {
   BrowserRouter as Router,
   Route,
@@ -13,24 +12,22 @@ import Detail from "./pages/Detail";
 
 function App() {
   return (
-    <div className="app">
-      <Router basename={process.env.PUBLIC_URL}>
-        <ScrollTop>
-          <Switch>
-            <Route exact path="/">
-              <Home />
-            </Route>
-            <Route exact path="/exhibits">
-              <Exhibits />
-            </Route>
-            <Route exact path="/:id">
-              <Detail />
-            </Route>
-            <Route render={() => <Redirect to={{ pathname: "/" }} />} />
-          </Switch>
-        </ScrollTop>
-      </Router>
-    </div>
+    <Router basename={process.env.PUBLIC_URL}>
+      <ScrollTop>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/exhibits">
+            <Exhibits />
+          </Route>
+          <Route exact path="/:id">
+            <Detail />
+          </Route>
+          <Route render={() => <Redirect to={{ pathname: "/" }} />} />
+        </Switch>
+      </ScrollTop>
+    </Router>
   );
 }
 

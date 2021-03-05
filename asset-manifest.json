@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/justiceleague/static/css/main.39f388dd.chunk.css",
-    "main.js": "/justiceleague/static/js/main.396b6071.chunk.js",
-    "main.js.map": "/justiceleague/static/js/main.396b6071.chunk.js.map",
+    "main.js": "/justiceleague/static/js/main.316a0982.chunk.js",
+    "main.js.map": "/justiceleague/static/js/main.316a0982.chunk.js.map",
     "runtime-main.js": "/justiceleague/static/js/runtime-main.16436ae5.js",
     "runtime-main.js.map": "/justiceleague/static/js/runtime-main.16436ae5.js.map",
     "static/js/2.4ea3b3e5.chunk.js": "/justiceleague/static/js/2.4ea3b3e5.chunk.js",
@@ -20,6 +20,6 @@
     "static/js/runtime-main.16436ae5.js",
     "static/js/2.4ea3b3e5.chunk.js",
     "static/css/main.39f388dd.chunk.css",
-    "static/js/main.396b6071.chunk.js"
+    "static/js/main.316a0982.chunk.js"
   ]
 }

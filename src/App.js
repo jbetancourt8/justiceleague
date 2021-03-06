@@ -18,15 +18,13 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/exhibits">
+          <Route exact path="/exhibits">
             <Exhibits />
           </Route>
-          <Route path="/:id">
+          <Route exact path="/:id">
             <Detail />
           </Route>
-          <Route path="*">
-            <Redirect to="/" />
-          </Route>
+          <Route render={() => <Redirect to={{ pathname: "/" }} />} />
         </Switch>
       </ScrollTop>
     </Router>
